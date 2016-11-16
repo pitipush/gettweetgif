@@ -17,9 +17,9 @@ echo "
 	
 
 echo "<div id='divactua' class='text-center'> 
-	<h1>Get tweet gif</h1>
-	<h3>If you like a GIF in Tweet ... catch it!</h3>
-	<p>	Tweet url can be obtained in \"...\" of tweet (web version), using \" Copy tweet link \" </p>
+	<h1>Get twitter gif</h1>
+	<h3>If you like a GIF in twitter ... catch it!</h3>
+	<p>	Tweet url can be obtained in \"...\" of tweet (web version), using \" Copy link to tweet\" </p>
 	<form name='actua' id='actua' method='post' action='".$_SERVER['PHP_SELF']."'>
 	<label for='url' class='control-label'>Tweet url: </label>
 	<input type='url' class='form-control' name='url' id='url' value='".$url."' placeholder='https://twitter.com/.....'>
@@ -38,10 +38,7 @@ if($url){
 		curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_PROXYUSERPWD, 'dapargelrss:BMbiYJ8fyV');
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,20); 
-		curl_setopt($ch, CURLOPT_PROXY, 'proxy.eroski.es:8081');
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		$res=curl_exec($ch);
 		curl_close($ch);
 		
