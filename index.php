@@ -51,34 +51,8 @@ echo "
 				</form>
             </p>
           </div>
-
-          <div class='mastfoot'>
-            <div class='inner'>
-              <p></p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
 ";
 
-	
-/*
-echo "<div id='divactua' class='text-center'> 
-	<h1>Get twitter gif</h1>
-	<h3>If you like a GIF in twitter ... catch it!</h3>
-	<p>	Tweet url can be obtained in \"...\" of tweet (web version), using \" Copy link to tweet\" </p>
-	<form name='actua' id='actua' method='post' action='".$_SERVER['PHP_SELF']."'>
-	<label for='url' class='control-label'>Tweet url: </label>
-	<input type='url' class='form-control' name='url' id='url' value='".$url."' placeholder='https://twitter.com/.....'>
-	<p></p>
-	<input type='submit' class='btn btn-large  btn-primary' value='Extract' name='extraer'>
-	</form>
-	</div>";	
-*/
 
 if($url){	
 		
@@ -118,6 +92,16 @@ if($url){
 		}
 }
 
-?>
+echo "     </div>
+
+      </div>
+
+    </div>
+	
 </body>
 </html>
+
+";
+
+
+?>
