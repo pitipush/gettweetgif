@@ -3,19 +3,70 @@
 $url = @$_REQUEST['url'];
 
 echo "
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name='Download twitter gif' content=''>
+    <meta name='author' content=''>
 
-<!DOCTYPE HTML>
-<html lang='es-ES'>
-<head>
-<title>Get Tweet Gif</title>
-<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+    <title>Download Twitter Gif</title>
 
-</head>
-<body>
+
+    <link href='global.css' rel='stylesheet'>
+    <link href='bootstrap.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
 ";
-	
 
+echo "
+    <div class='site-wrapper'>
+
+      <div class='site-wrapper-inner'>
+
+        <div class='cover-container'>
+
+          <div class='masthead clearfix'>
+            <div class='inner'>
+              <h3 class='masthead-brand'>If you like a GIF in twitter ... catch it!</h3>
+            </div>
+          </div>
+
+          <div class='inner cover'>
+            <h1 class='cover-heading'>Download twitter gif</h1>
+            <p class='lead'>Tweet url can be obtained in \"...\" of tweet (web version), using \" Copy link to tweet\" </p>
+            <p class='lead'>
+				<form name='actua' id='actua' method='post' action='".$_SERVER['PHP_SELF']."'>
+					
+					<label for='url' class='control-label'>Tweet url: </label>
+					<div class='input-group'>
+						<input type='url' class='form-control' name='url' id='url' value='".$url."' placeholder='https://twitter.com/.....'>
+					<span class='input-group-btn'>	
+						<input type='submit' class='btn btn-large  btn-primary' value='Extract' name='extraer'>
+					</span>
+					</div>
+				</form>
+            </p>
+          </div>
+
+          <div class='mastfoot'>
+            <div class='inner'>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+";
+
+	
+/*
 echo "<div id='divactua' class='text-center'> 
 	<h1>Get twitter gif</h1>
 	<h3>If you like a GIF in twitter ... catch it!</h3>
@@ -27,6 +78,7 @@ echo "<div id='divactua' class='text-center'>
 	<input type='submit' class='btn btn-large  btn-primary' value='Extract' name='extraer'>
 	</form>
 	</div>";	
+*/
 
 if($url){	
 		
