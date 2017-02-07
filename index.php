@@ -31,19 +31,19 @@ echo "
 
           <div class='masthead clearfix'>
             <div class='inner'>
-              <h3 class='masthead-brand'>If you like a GIF in twitter ... catch it!</h3>
+			  <h1 class='cover-heading'>Download twitter gif</h1>
+              <h2>If you like a GIF in twitter ... catch it!</h2>
+			  <img src='twitterbird.gif'>
             </div>
+			
           </div>
 
-          <div class='inner cover'>
-            <h1 class='cover-heading'>Download twitter gif</h1>
-            <p class='lead'>Tweet url can be obtained in \"...\" of tweet (web version), using \" Copy link to tweet\" </p>
+          <div class='inner cover'>	
             <p class='lead'>
 				<form name='actua' id='actua' method='post' action='".$_SERVER['PHP_SELF']."'>
-					
 					<label for='url' class='control-label'>Tweet url: </label>
 					<div class='input-group'>
-						<input type='url' class='form-control' name='url' id='url' value='".$url."' placeholder='https://twitter.com/.....'>
+						<input type='url' class='form-control' name='url' id='url' value='".$url."' placeholder='Tweet url...'>
 					<span class='input-group-btn'>	
 						<input type='submit' class='btn btn-large  btn-primary' value='Extract' name='extraer'>
 					</span>
@@ -93,6 +93,13 @@ if($url){
 }
 
 echo "     </div>
+			  <p class='lead'><ul>
+			  <li>Tweet url can be obtained in \"v\" of tweet (web version), using \" Copy link to tweet\" <img src='twitter-link.jpg'> </li>
+			  <li>Twitter not serve animated GIF really ... all is MP4 format, but they say 'It's a GIF!' <img src='twitter-gif.png'></li>
+			  <li>With this tool, you can download the MP4 file and then convert it, with other service, into a GIF file...or not.</li>  
+			  </ul>
+			  </p>				
+
 
       </div>
 
