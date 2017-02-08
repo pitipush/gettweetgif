@@ -121,7 +121,6 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
 }
 
 
@@ -155,6 +154,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 50rem;
   }
 }
